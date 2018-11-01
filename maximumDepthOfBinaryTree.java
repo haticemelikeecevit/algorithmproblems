@@ -14,7 +14,7 @@ Note: A leaf is a node with no children.
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class maximumDepthOfBinaryTree {
     public int maxDepth(TreeNode root) {
         if(root == null)
             return 0;
