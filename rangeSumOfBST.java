@@ -19,7 +19,9 @@ class Solution {
         int sum = 0;
         if (root.val >= L && root.val <= R)
             sum += root.val;
+        if (root.val > L)
         sum =  sum + rangeSumBST(root.left, L, R);
+        if (root.val < R)
         sum =  sum + rangeSumBST(root.right, L, R);
         return sum;
     }
